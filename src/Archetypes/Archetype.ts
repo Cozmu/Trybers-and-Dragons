@@ -17,7 +17,7 @@ abstract class Archetype {
 
   get cost():number {
     return this._cost;
-  } // EnergyType
+  }
 
   abstract get energyType():EnergyType;
 
