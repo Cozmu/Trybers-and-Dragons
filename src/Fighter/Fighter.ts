@@ -1,8 +1,7 @@
 import Energy from '../Energy';
+import IFighter from './IFighter';
 
-interface Fighter {
-  lifePoints:number, 
-  strength: number,
+interface Fighter extends IFighter {
   defense: number,
   energy?: Energy,
   attack(enemy: Fighter):void,
