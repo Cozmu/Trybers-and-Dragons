@@ -19,9 +19,9 @@ class Character implements Fighter {
   constructor(
     private _name:string,
   ) {
-    this._race = new Elf(_name, Newdexterity);
+    this._race = new Elf(_name, Newdexterity); // mudar
     this._dexterity = Newdexterity;
-    this._archetype = new Mage(_name);
+    this._archetype = new Mage(_name); // mudar
     this._maxLifePoints = this._race.maxLifePoints / 2;
     this._lifePoints = this._maxLifePoints;
     this._strength = getRandomInt(1, 10);
